@@ -2,7 +2,6 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 function initialise(){
-    console.log("INITIALISING GAME");
     document.getElementById('hitButton').disabled = false;
     document.getElementById('standButton').disabled = false;
     document.getElementById('resetButton').innerHTML = "RESET";
