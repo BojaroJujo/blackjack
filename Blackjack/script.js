@@ -31,8 +31,6 @@ function displayUpdate(player = false, dealer = false){
     if (player) {
         animateDisplayChange('playerScore', playerValue);
         displayHand(playerHand, 'playerHand');
-        console.log(playerHand);
-        console.log(playerValue); 
     }
     if (dealer) {
         animateDisplayChange('dealerScore', dealerValue);
