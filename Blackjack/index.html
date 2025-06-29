@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div id="container" class="flexColumn">
+            <div id="header">
+                <h1>BlackJack!</h1>
+            </div>
+            <div id="mainGame" class="flexColumn">
+                <label>PLAYER</label>
+                <div id="playerCards" class="flexRow">
+                    <p>SCORE: <span id="playerScore">0</span></p>
+                    <p>CARDS: <span id="playerHand"></span></p>
+                </div>
+                <label>DEALER</label>
+                <div id="dealerCards" class="flexRow">
+                    <p>SCORE: <span id="dealerScore">?</span></p>
+                    <p> CARDS: <span id="dealerHand"></span></p>
+                </div>
+                <div id="gameOutcome"></div>
+            </div>
+            <div id="buttons" class="flexRow">
+                <button id="hitButton" onclick="hit()">HIT!</button>
+                <button id="standButton" onclick="stand()">STAND!</button>
+                <button id="resetButton" onClick="reset()">RESET</button>
+            </div>
+            <div id="footer" class="flexRow">
+                <p>Made by BojaroJujo.</p>
+            </div>
+        </div>
+        <script src="cards.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
